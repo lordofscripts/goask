@@ -1,9 +1,9 @@
 # Go Ask !!!
 
-![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/lordofscripts/go-ask)
-[![Go Report Card](https://goreportcard.com/badge/github.com/lordofscripts/go-ask?style=flat-square)](https://goreportcard.com/report/github.com/lordofscripts/go-ask)
-[![Go Reference](https://pkg.go.dev/badge/github.com/lordofscripts/go-ask.svg)](https://pkg.go.dev/github.com/lordofscripts/go-ask)
-[![GitHub release (with filter)](https://img.shields.io/github/v/release/lordofscripts/go-ask)](https://github.com/lordofscripts/go-ask/releases/latest)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/lordofscripts/goask)
+[![Go Report Card](https://goreportcard.com/badge/github.com/lordofscripts/goask?style=flat-square)](https://goreportcard.com/report/github.com/lordofscripts/goask)
+[![Go Reference](https://pkg.go.dev/badge/github.com/lordofscripts/goask.svg)](https://pkg.go.dev/github.com/lordofscripts/goask)
+[![GitHub release (with filter)](https://img.shields.io/github/v/release/lordofscripts/goask)](https://github.com/lordofscripts/goask/releases/latest)
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 ![](./gopher-goask.png)
@@ -18,12 +18,12 @@ the user, and as a result fill-in the corresponding CLI flags accordingly.
 
 To install into your project's `go.mod`:
 
-> go get github.com/lordofscripts/go-ask
+> go get github.com/lordofscripts/goask
 
 And to use in your GO code:
 
-> import "github.com/lordofscripts/go-ask/ask"
-> import "github.com/lordofscripts/go-ask/fsm"
+> import "github.com/lordofscripts/goask/ask"
+> import "github.com/lordofscripts/goask/fsm"
 
 ## Ask Package
 
@@ -188,3 +188,7 @@ And then create the state.
 >                   initialStateExit,  // optional
 >                   false, // true only for terminal states!
 >                   initialStateBody
+
+If you don't want to bother creating your own final state, you can use
+a predefined one with Id `fsm.StateFinal` that has already been
+instantiated as `fsm.DefaultFinalState`.

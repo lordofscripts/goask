@@ -8,12 +8,15 @@
  *-----------------------------------------------------------------*/
 package fsm
 
+import "fmt"
+
 /* ----------------------------------------------------------------
  *						G l o b a l s
  *-----------------------------------------------------------------*/
 
 const (
-	StateNone StateId = StateId(0)
+	StateNone  StateId = StateId(0)
+	StateFinal StateId = StateId(65535) // pre-defined
 
 /*
 // These are user-provided in his/her module
@@ -23,6 +26,8 @@ State1
 FinalState
 */
 )
+
+var DefaultFinalState *State = NewState(StateFinal, "FIN", func(im IStateMachine) { fmt.Println("⚡ Entered FinalState") }, func(im IStateMachine) { fmt.Println("⚡ Exit FinalState") }, true, func(im IStateMachine) StateId { fmt.Println("⛔ The End"); return StateFinal })
 
 /* ----------------------------------------------------------------
  *				P u b l i c		T y p e s
