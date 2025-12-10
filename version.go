@@ -18,7 +18,7 @@ import (
  *							G l o b a l s
  *-----------------------------------------------------------------*/
 const (
-	MANUAL_VERSION string = "1.0.1" // in case vcsVersion not injected during link phase
+	MANUAL_VERSION string = "1.0.2" // in case vcsVersion not injected during link phase
 
 	// Useful Unicode Characters
 	CHR_COPYRIGHT       = '\u00a9'      // ©
@@ -41,7 +41,7 @@ const (
 
 	// Change these values accordingly
 	NAME string = "GoAsk"
-	DESC string = "A simple console input handler for CLI apps"
+	DESC string = "A simple console input handler & automata for CLI apps"
 	// don't change
 	statusAlpha    status = "Alpha"
 	statusBeta     status = "Beta"

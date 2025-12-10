@@ -10,9 +10,10 @@ package main
 
 import (
 	"fmt"
-	"lordofscripts/goask"
-	"lordofscripts/goask/ask"
 	"os"
+
+	"github.com/lordofscripts/goask"
+	"github.com/lordofscripts/goask/ask"
 )
 
 /* ----------------------------------------------------------------

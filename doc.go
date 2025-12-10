@@ -1,7 +1,7 @@
 /* -----------------------------------------------------------------
  *					L o r d  O f   S c r i p t s (tm)
  *				  Copyright (C)2025 Dídimo Grimaldo T.
- *							   go-ask
+ *							   goAsk
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  *  GoAsk is a simple module made with command-line applications in
  * mind. It has multiple objects representing questions, answers and
@@ -28,5 +28,8 @@ const (
 	ANSI_BROWN  string = "\u001b[33m"
 
 	// Unicode symbols
-	ICON_WHITE_RIGHT rune = rune(0x1f449) // 👉
+	ICON_WHITE_RIGHT  rune = rune(0x1f449) // 👉
+	ICON_HIGH_VOLTAGE rune = rune(0x26a1)  // ⚡
+	ICON_CROSSLANE    rune = rune(0x26cc)  // ⛌
+	ICON_NO_ENTRY     rune = rune(0x26d4)  // ⛔
 )

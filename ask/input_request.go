@@ -11,10 +11,11 @@ package ask
 import (
 	"bufio"
 	"fmt"
-	"lordofscripts/goask"
 	"os"
 	"strconv"
 	"strings"
+
+	"github.com/lordofscripts/goask"
 )
 
 /* ----------------------------------------------------------------

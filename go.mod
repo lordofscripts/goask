@@ -1,3 +1,3 @@
-module github.com/lordofscripts/go-ask
+module github.com/lordofscripts/goask
 
-go 1.21
+go 1.21.0

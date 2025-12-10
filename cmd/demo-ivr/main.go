@@ -15,9 +15,10 @@ package main
 
 import (
 	"fmt"
-	"lordofscripts/goask/ask"
-	"lordofscripts/goask/fsm"
 	"strconv"
+
+	"github.com/lordofscripts/goask/ask"
+	"github.com/lordofscripts/goask/fsm"
 )
 
 const (
@@ -207,9 +208,10 @@ func defineStates() *fsm.StateMachine[MyUserData] {
 		txVoice("We are transferring you to another department. Trust us!")
 	}, false, func(im fsm.IStateMachine) fsm.StateId {
 		txMusic("(Annoying music here)")
-		return FinalState
+		return fsm.StateFinal // use the default
 	})
-	sequencer = fsm.NewStateMachine[MyUserData]("Customer Service", st0, st1, st2, st3, st4, st5, stX).SetUserDataObject(&myStateData)
+	// we have two final states, a nice one and a rude one
+	sequencer = fsm.NewStateMachine[MyUserData]("Customer Service", st0, st1, st2, st3, st4, st5, stX, fsm.DefaultFinalState).SetUserDataObject(&myStateData)
 
 	return sequencer
 }
