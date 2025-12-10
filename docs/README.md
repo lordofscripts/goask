@@ -14,6 +14,17 @@ for users not accustomed to the CLI. Therefore, it occured to me that it
 could be nice to have a CLI interactive questionaire that would interview
 the user, and as a result fill-in the corresponding CLI flags accordingly.
 
+## Install
+
+To install into your project's `go.mod`:
+
+> go get github.com/lordofscripts/go-ask
+
+And to use in your GO code:
+
+> import "github.com/lordofscripts/go-ask/ask"
+> import "github.com/lordofscripts/go-ask/fsm"
+
 ## Ask Package
 
 It contains the main functionality where the Go module asks, via the
